@@ -246,7 +246,7 @@ export class DiscordBotClient extends EventEmitter {
                 // Enable DoH (Cloudflare)
                 app.configureHostResolver({
                     enableBuiltInResolver: true,
-                    secureDnsMode: "secure",
+                    secureDnsMode: "automatic",
                     enableHappyEyeballs: true,
                     enableAdditionalDnsQueryTypes: true,
                     secureDnsServers: ["https://cloudflare-dns.com/dns-query"],
